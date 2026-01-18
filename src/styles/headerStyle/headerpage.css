@@ -1,4 +1,21 @@
 #header {
+    width: 100%;
     background-color: rgb(200, 215, 231);
     padding: 5.5px 12px;
+}
+
+#header > .searchItens {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header > .searchItens > #searchSearch {
+    border-radius: 8.66px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.392);
+    padding: 10px;
+    font-weight: 550;
+    font-size: 1.0.4em;
 }
