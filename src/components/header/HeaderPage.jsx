@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaCartShopping } from "react-icons/fa6";
 import { MdRemoveShoppingCart } from "react-icons/md";
+import '../../styles/headerStyle/headerpage.css'
 
 
 const HeaderPage = () => {
@@ -11,10 +12,10 @@ const HeaderPage = () => {
 
   return (
       <>
-      <header>
+      <header id='header'>
 
         <div className="searchItens">
-           <input type="search" placeholder='Pesquisar item da lista'  id="btnsearch" />
+           <input type="search" placeholder='Pesquisar item'  id="btnsearch" />
 
            <div onClick={() => SetStatusBtnCart(!statusBtnCart)} className="area_cart">
              {statusBtnCart

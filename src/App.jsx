@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import HeaderPage from './components/header/HeaderPage'
 
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
 
   return (
     <>
+     <HeaderPage />
   
     </>
   )
