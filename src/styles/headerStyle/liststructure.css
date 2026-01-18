@@ -1,0 +1,22 @@
+#ul_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-flow: column nowrap;
+}
+
+#ul_list  > li {
+    display: flex;
+    gap: 19px;
+    list-style: none;
+    color: white;
+    padding: 5px 25px;
+    border-radius:4px;
+    border-bottom: 3px solid rgb(251, 166, 8);
+}
+
+#ul_list  > li > #check_icon {
+    color: yellow;
+    cursor: pointer;
+}

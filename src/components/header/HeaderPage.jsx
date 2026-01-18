@@ -3,6 +3,7 @@ import { MdAddShoppingCart } from "react-icons/md";
 import { MdRemoveShoppingCart } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import '../../styles/headerStyle/headerpage.css'
+import ListStructure from './ListStructure';
 
 const HeaderPage = () => {
 
@@ -26,28 +27,38 @@ const HeaderPage = () => {
                : <MdRemoveShoppingCart size={33} />
              }
 
+
+
              {
               statusBtnCart
               ? (
-                 <div className="menuList">
-                  <section id='basic_section'>
-                    <h2 className='tittle_category'>Básicos</h2>
-                  </section>
-
-                  <section id='basic_section'>
-                    <h2 className='tittle_category'>Lanches</h2>
-                  </section>
-
-                  <section id='fruits_and_vegetables_section'>
-                    <h2 className='tittle_category'>frutas e legumes</h2>
-                  </section>
-
-                  <section id='bebidas_section'>
-                    <h2 className='tittle_category'>Bebidas</h2>
-                  </section>
-                 </div>
+                 ''
               )
-              : ('')
+              : (
+                <div className="menuList">
+                   <section className='section_category' id='basic_section'>
+                      <h2 className='tittle_category'>Básicos</h2>
+
+                    <ListStructure />
+                   </section>
+
+                   <section className='section_category' id='basic_section'>
+                      <h2 className='tittle_category'>Lanches</h2>
+
+                    <ListStructure />
+                   </section>
+
+                   <section className='section_category' id='fruits_and_vegetables_section'>
+                      <h2 className='tittle_category'>frutas e legumes</h2><ListStructure />
+                   </section>
+
+                   <section className='section_category' id='bebidas_section'>
+                      <h2 className='tittle_category'>Bebidas</h2>
+
+                      <ListStructure />
+                   </section>
+                 </div>                
+              )
              }
            </div>
         </div>
