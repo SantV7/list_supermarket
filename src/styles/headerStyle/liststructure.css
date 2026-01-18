@@ -4,13 +4,17 @@
     align-items: center;
     gap: 8px;
     flex-flow: column nowrap;
+    padding-bottom: 50px;
 }
 
 #ul_list  > li {
     display: flex;
-    gap: 19px;
+    gap: 37px;
     list-style: none;
     color: white;
+    font-size: 1.23em;
+    font-weight: 600;
+    margin-bottom: 7px;
     padding: 5px 25px;
     border-radius:4px;
     border-bottom: 3px solid rgb(251, 166, 8);

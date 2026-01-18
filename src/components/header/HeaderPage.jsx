@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { use, useState } from 'react'
 import { MdAddShoppingCart } from "react-icons/md";
 import { MdRemoveShoppingCart } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import '../../styles/headerStyle/headerpage.css'
+import { IoBagAdd } from "react-icons/io5";
 import ListStructure from './ListStructure';
 
 const HeaderPage = () => {
+
+  const [addList, SetAddList] = useState(false)
 
   const [statusBtnCart, SetStatusBtnCart] = useState(true)
 
@@ -21,13 +24,15 @@ const HeaderPage = () => {
              <CiSearch size={30} id='search_icon' />
            </div>
 
+             <IoBagAdd onClick={() => SetAddList(!addList)} id='icon_add_list' size={33} />
+
+
+
            <div onClick={() => SetStatusBtnCart(!statusBtnCart)} className="area_cart">
              {statusBtnCart
                ? <MdAddShoppingCart size={33} />
                : <MdRemoveShoppingCart size={33} />
              }
-
-
 
              {
               statusBtnCart
