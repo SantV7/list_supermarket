@@ -1,5 +1,6 @@
 #header {
     width: 100%;
+    height: -90px;
     background-color: rgb(200, 215, 231);
     padding: 5.5px 12px;
 }
@@ -11,11 +12,56 @@
     justify-content: space-between;
 }
 
-#header > .searchItens > #searchSearch {
+#header > .searchItens > .area_search {
+    padding: 2px;
+    display: flex;
     border-radius: 8.66px;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.392);
-    padding: 10px;
-    font-weight: 550;
-    font-size: 1.0.4em;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    width: 71%;
+    border: 2px solid rgba(78, 138, 249, 0.392);
+    transition: ease 0.39s;
 }
+
+#header > .searchItens > .area_search > input {
+    font-weight: 550;
+    font-size: 1em;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#header > .searchItens > .area_search:hover {
+    border: 2px solid rgb(188, 188, 249);
+}
+
+
+#header > .searchItens > .area_search > #search_icon {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#header > .searchItens > .area_cart {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+}
+
+.menuList {
+    position: absolute;
+    top: 83.5px;
+    right: 0;
+    padding: 8px;
+    width: 50%;
+    height: 84vh;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(200, 215, 231);
+}
+
+.menuList > .tittle_category {
+    color: orange;
+}
+
