@@ -35,7 +35,6 @@ const HeaderPage = () => {
 
              <IoBagAdd onClick={() => showAddList()} id='icon_add_list' size={35} />
 
-
              {
               addList
               ? (<ShowAddList />)
