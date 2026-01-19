@@ -5,12 +5,24 @@ import { CiSearch } from "react-icons/ci";
 import '../../styles/headerStyle/headerpage.css'
 import { IoBagAdd } from "react-icons/io5";
 import ListStructure from './ListStructure';
+import ShowAddList from '../feature/ShowAddList';
+
+
+
 
 const HeaderPage = () => {
 
   const [addList, SetAddList] = useState(false)
 
   const [statusBtnCart, SetStatusBtnCart] = useState(true)
+
+  function showAddList() {
+    SetAddList(!addList)
+
+     addList
+     ? <ShowAddList />
+     : ('')
+  }
 
 
 
@@ -24,9 +36,7 @@ const HeaderPage = () => {
              <CiSearch size={30} id='search_icon' />
            </div>
 
-             <IoBagAdd onClick={() => SetAddList(!addList)} id='icon_add_list' size={33} />
-
-
+             <IoBagAdd onClick={() => showAddList()} id='icon_add_list' size={37} />
 
            <div onClick={() => SetStatusBtnCart(!statusBtnCart)} className="area_cart">
              {statusBtnCart
