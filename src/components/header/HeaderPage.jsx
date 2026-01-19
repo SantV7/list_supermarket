@@ -16,14 +16,10 @@ const HeaderPage = () => {
 
   const [statusBtnCart, SetStatusBtnCart] = useState(true)
 
+
   function showAddList() {
     SetAddList(!addList)
-
-     addList
-     ? <ShowAddList />
-     : ('')
   }
-
 
 
   return (
@@ -36,7 +32,9 @@ const HeaderPage = () => {
              <CiSearch size={30} id='search_icon' />
            </div>
 
-             <IoBagAdd onClick={() => showAddList()} id='icon_add_list' size={37} />
+
+             <IoBagAdd onClick={() => showAddList()} id='icon_add_list' size={35} />
+
 
            <div onClick={() => SetStatusBtnCart(!statusBtnCart)} className="area_cart">
              {statusBtnCart
@@ -44,11 +42,17 @@ const HeaderPage = () => {
                : <MdRemoveShoppingCart size={33} />
              }
 
+
+
+             {
+              addList
+              ? (<ShowAddList />)
+              : ('')
+             }
+
              {
               statusBtnCart
-              ? (
-                 ''
-              )
+              ? ('')
               : (
                 <div className="menuList">
                    <section className='section_category' id='basic_section'>
