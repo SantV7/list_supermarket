@@ -36,19 +36,18 @@ const HeaderPage = () => {
              <IoBagAdd onClick={() => showAddList()} id='icon_add_list' size={35} />
 
 
+             {
+              addList
+              ? (<ShowAddList />)
+              : ('')
+             }
+
            <div onClick={() => SetStatusBtnCart(!statusBtnCart)} className="area_cart">
              {statusBtnCart
                ? <MdAddShoppingCart size={33} />
                : <MdRemoveShoppingCart size={33} />
              }
 
-
-
-             {
-              addList
-              ? (<ShowAddList />)
-              : ('')
-             }
 
              {
               statusBtnCart

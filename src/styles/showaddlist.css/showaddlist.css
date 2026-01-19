@@ -25,15 +25,18 @@
 .addItemList > input {
     border-radius: 6px;
     padding: 5px;
+    transition:  ease 0.36s;
     outline: none;
     font-size: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.416);
+    border: 2px solid rgba(38, 27, 88, 0.362);
 }
 
 .addItemList > input::placeholder {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.858);
     text-align: center;
 }
 
 .addItemList > input:focus {
-    border: 1px solid rgb(110, 110, 254);
+    border: 2px solid rgb(110, 110, 254);
 }

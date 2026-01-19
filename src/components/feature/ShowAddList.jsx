@@ -8,7 +8,7 @@ const ShowAddList = () => {
     <>
       <div className="addItemList">
         <h2>Adicionar Item</h2>
-        <input type="text" placeholder="Adicionar" />
+        <input onClick={(e) => e.target.value} type="text" placeholder="Adicionar" />
       </div>
     </>
   )
