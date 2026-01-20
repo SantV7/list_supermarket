@@ -3,9 +3,11 @@ import '../../styles/headerStyle/liststructure.css'
 import { FaCheck } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 const ListStructure = () => {
-    
+
     
     const [listProducts , setListProducts ] = useState([])
+
+    
 
     return (
          <>

@@ -24,6 +24,8 @@ const HeaderPage = () => {
   }
 
 
+
+
   return (
       <>
       <header id='header'>
@@ -56,23 +58,23 @@ const HeaderPage = () => {
               : (
                 <div className="menuList">
                    <section className='section_category' id='basic_section'>
-                      <h2 className='tittle_category'>Básicos</h2>
+                      <h2 className='tittle_category'></h2>
 
                     <ListStructure />
                    </section>
 
                    <section className='section_category' id='basic_section'>
-                      <h2 className='tittle_category'>Lanches</h2>
+                      <h2 className='tittle_category'></h2>
 
                     <ListStructure />
                    </section>
 
                    <section className='section_category' id='fruits_and_vegetables_section'>
-                      <h2 className='tittle_category'>frutas e legumes</h2><ListStructure />
+                      <h2 className='tittle_category'></h2><ListStructure />
                    </section>
 
                    <section className='section_category' id='bebidas_section'>
-                      <h2 className='tittle_category'>Bebidas</h2>
+                      <h2 className='tittle_category'></h2>
 
                       <ListStructure />
                    </section>

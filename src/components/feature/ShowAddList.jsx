@@ -11,8 +11,11 @@ const ShowAddList = ({closeAddList}) => {
   let [saveAddItem, setSaveAddItem] = useState('')
       
   function saveValue() {
-    // Enviar valor de categoriai e item
+    saveAddCategory
+    saveAddItem
   }
+
+
 
 
 
@@ -26,22 +29,28 @@ const ShowAddList = ({closeAddList}) => {
         />
 
         <div id='category_area_input' className="input-add-list">
+
             <label htmlFor="category_input">Categoria<FaLongArrowAltRight 
              size={25} className='arrow-to-input'/>
             </label>
-            <input type="text" onChange={(e) => setSaveAddCtegory(e.target.value)} id='category_input' placeholder="Adicionar" />       
+
+            <input type="text" onChange={(e) => setSaveAddCtegory(e.target.value)} 
+            id='category_input' placeholder="Adicionar" />       
         </div>
 
 
         <div id='input_area_input' className="input-add-list">
+
           <label htmlFor="item_input">Item <FaLongArrowAltRight
             size={25} className='arrow-to-input'/>
            </label>
-          <input type="text" onChange={(e) => setSaveAddItem(e.target.value)} id='item_input' placeholder='Adicionar' />
+
+          <input type="text" onChange={(e) => setSaveAddItem(e.target.value)} 
+          id='item_input' placeholder='Adicionar' />
         </div>
 
-        <button onClick={() => saveValue()} id='add_adn_save_on_list'>Adicionar a lista</button>
 
+        <button onClick={() => saveValue()} id='add_adn_save_on_list'>Adicionar a lista</button>
       </div>
     </>
   )
