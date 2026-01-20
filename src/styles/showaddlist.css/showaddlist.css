@@ -4,7 +4,7 @@
     align-items: center;
     flex-flow: column nowrap;
     position: absolute;
-    top: 25%;
+    top: 33%;
     left: 5%;
     width: 90%;
     gap: 20px;
@@ -25,9 +25,9 @@
 .addItemList > #close_icon_add_list {
     position: absolute;
     cursor: pointer;
-    color: rgb(14, 171, 255);
-    top: 26px;
-    right: 31px;
+    color: orange;
+    top: 23.8px;
+    right: 32px;
 }
 
 .addItemList > .input-add-list {

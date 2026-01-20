@@ -12,7 +12,7 @@ const ShowAddList = ({closeAddList}) => {
     <>
       <div className="addItemList">
         <h2>Adicionar Item</h2>
-        <IoCloseCircle onClick={() => closeAddList()} id='close_icon_add_list' size={35} />
+        <IoCloseCircle onClick={() => closeAddList()} id='close_icon_add_list' size={40} />
 
         <div id='category_area_input' className="input-add-list">
             <label htmlFor="category_input">Categoria<FaLongArrowAltRight size={25}  className='arrow-to-input'/></label>

@@ -7,13 +7,17 @@ main {
 
 main > #area_list_itens {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column nowrap;
     height: 60%;
 }
 
 main > #area_list_itens > .see_your_list {
     font-size: 21px;
     margin-top: 40px;
+    border-bottom: 4px solid rgba(49, 101, 153, 0.607);
     text-align: center;
     color: rgb(59, 59, 63);
+    border-radius: 4px;
 }
