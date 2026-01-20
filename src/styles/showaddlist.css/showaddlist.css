@@ -4,7 +4,7 @@
     align-items: center;
     flex-flow: column nowrap;
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 5%;
     width: 90%;
     gap: 20px;
@@ -16,10 +16,18 @@
 }
 
 .addItemList > h2 {
+    margin-left: -19px;
     margin-top: 7px;
-    font-size: 1.75em;
+    font-size: 1.88em;
     color: rgb(215, 215, 252);
     text-shadow: 1.37px 1.37px 1px rgba(117, 117, 251, 0.912);
+}
+.addItemList > #close_icon_add_list {
+    position: absolute;
+    cursor: pointer;
+    color: rgb(14, 171, 255);
+    top: 26px;
+    right: 31px;
 }
 
 .addItemList > .input-add-list {

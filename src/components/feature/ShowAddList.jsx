@@ -1,7 +1,10 @@
 import '../../styles/showaddlist.css/showaddlist.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { IoCloseCircle } from "react-icons/io5";
 
-const ShowAddList = () => {
+
+
+const ShowAddList = ({closeAddList}) => {
 
 
 
@@ -9,6 +12,7 @@ const ShowAddList = () => {
     <>
       <div className="addItemList">
         <h2>Adicionar Item</h2>
+        <IoCloseCircle onClick={() => closeAddList()} id='close_icon_add_list' size={35} />
 
         <div id='category_area_input' className="input-add-list">
             <label htmlFor="category_input">Categoria<FaLongArrowAltRight size={25}  className='arrow-to-input'/></label>

@@ -8,8 +8,6 @@ import ListStructure from './ListStructure';
 import ShowAddList from '../feature/ShowAddList';
 
 
-
-
 const HeaderPage = () => {
 
   const [addList, SetAddList] = useState(false)
@@ -19,6 +17,10 @@ const HeaderPage = () => {
 
   function showAddList() {
     SetAddList(!addList)
+  }
+
+  function closeAddList() {
+    SetAddList(false)
   }
 
 
@@ -37,7 +39,7 @@ const HeaderPage = () => {
 
              {
               addList
-              ? (<ShowAddList />)
+              ? (<ShowAddList closeAddList={closeAddList}/>)
               : ('')
              }
 
