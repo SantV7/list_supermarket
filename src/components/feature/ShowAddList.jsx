@@ -4,16 +4,12 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoCloseCircle } from "react-icons/io5";
 
 
-const ShowAddList = ({closeAddList}) => {
+const ShowAddList = ({ closeAddList, saveValue }) => {
 
-  let [saveAddCategory, setSaveAddCtegory] = useState('')
+  let [saveAddCategory, setSaveAddCategory] = useState('')
       
   let [saveAddItem, setSaveAddItem] = useState('')
-      
-  function saveValue() {
-    saveAddCategory
-    saveAddItem
-  }
+
 
 
 
@@ -34,7 +30,7 @@ const ShowAddList = ({closeAddList}) => {
              size={25} className='arrow-to-input'/>
             </label>
 
-            <input type="text" onChange={(e) => setSaveAddCtegory(e.target.value)} 
+            <input type="text" onChange={(e) => setSaveAddCategory(e.target.value)} 
             id='category_input' placeholder="Adicionar" />       
         </div>
 
@@ -50,7 +46,7 @@ const ShowAddList = ({closeAddList}) => {
         </div>
 
 
-        <button onClick={() => saveValue()} id='add_adn_save_on_list'>Adicionar a lista</button>
+        <button onClick={() => saveValue(saveAddCategory, saveAddItem)} id='add_adn_save_on_list'>Adicionar a lista</button>
       </div>
     </>
   )

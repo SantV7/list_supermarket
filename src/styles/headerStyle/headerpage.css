@@ -70,11 +70,11 @@
     align-items: center;
     flex-flow: column nowrap;
     gap: 27px;
-    top: 83.5px;
+    top: 82px;
     right: 0;
     padding: 8px;
     width: 60%;
-    border-left: 1px solid rgba(1, 1, 1, 0.075);
+    border-left: 1px solid rgba(23, 45, 244, 0.303);
     border-bottom: 1px solid rgba(1, 1, 1, 0.075);
     border-bottom-left-radius: 6px;
     background-color: rgb(200, 215, 231);

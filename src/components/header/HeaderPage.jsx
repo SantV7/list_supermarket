@@ -10,9 +10,16 @@ import ShowAddList from '../feature/ShowAddList';
 
 const HeaderPage = () => {
 
+
+
   const [addList, SetAddList] = useState(false)
 
   const [statusBtnCart, SetStatusBtnCart] = useState(true)
+
+   function saveValue() {
+    saveAddCategory
+    saveAddItem
+  }
 
 
   function showAddList() {
@@ -22,8 +29,6 @@ const HeaderPage = () => {
   function closeAddList() {
     SetAddList(false)
   }
-
-
 
 
   return (
@@ -41,7 +46,7 @@ const HeaderPage = () => {
 
              {
               addList
-              ? (<ShowAddList closeAddList={closeAddList}/>)
+              ? (<ShowAddList saveValue={saveValue} closeAddList={closeAddList}/>)
               : ('')
              }
 
@@ -57,25 +62,23 @@ const HeaderPage = () => {
               ? ('')
               : (
                 <div className="menuList">
-                   <section className='section_category' id='basic_section'>
+                   <section className='section_category' >
                       <h2 className='tittle_category'></h2>
-
-                    <ListStructure />
+                      <ListStructure />
                    </section>
 
-                   <section className='section_category' id='basic_section'>
+                   <section className='section_category' >
                       <h2 className='tittle_category'></h2>
-
-                    <ListStructure />
+                      <ListStructure />
                    </section>
 
-                   <section className='section_category' id='fruits_and_vegetables_section'>
-                      <h2 className='tittle_category'></h2><ListStructure />
+                   <section className='section_category' >
+                      <h2 className='tittle_category'></h2>
+                      <ListStructure />
                    </section>
 
-                   <section className='section_category' id='bebidas_section'>
+                   <section className='section_category' >
                       <h2 className='tittle_category'></h2>
-
                       <ListStructure />
                    </section>
                  </div>                
