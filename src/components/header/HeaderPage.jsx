@@ -46,7 +46,7 @@ const HeaderPage = () => {
 
              {
               addList
-              ? (<ShowAddList saveValue={saveValue} closeAddList={closeAddList}/>)
+              ? (<ShowAddList saveValue={saveValue(saveAddCategory, saveAddItem)} closeAddList={closeAddList}/>)
               : ('')
              }
 
