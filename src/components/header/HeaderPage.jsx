@@ -16,9 +16,16 @@ const HeaderPage = () => {
 
   const [statusBtnCart, SetStatusBtnCart] = useState(true)
 
-   function saveValue() {
-    saveAddCategory
-    saveAddItem
+  const [categories, setCategories] = useState([]);
+  
+  const [items, setItems] = useState([]);
+
+
+
+   function saveValue(saveAddCategory, saveAddItem) {
+    alert(`Categoria: ${saveAddCategory} e itens: ${saveAddItem}`)
+     setCategories(saveAddCategory)
+     setItems(saveAddItem)
   }
 
 
@@ -46,7 +53,7 @@ const HeaderPage = () => {
 
              {
               addList
-              ? (<ShowAddList saveValue={saveValue(saveAddCategory, saveAddItem)} closeAddList={closeAddList}/>)
+              ? (<ShowAddList saveValue={saveValue} closeAddList={closeAddList}/>)
               : ('')
              }
 
@@ -63,22 +70,22 @@ const HeaderPage = () => {
               : (
                 <div className="menuList">
                    <section className='section_category' >
-                      <h2 className='tittle_category'></h2>
+                      <h2 className='tittle_category'>{categories}</h2>
                       <ListStructure />
                    </section>
 
                    <section className='section_category' >
-                      <h2 className='tittle_category'></h2>
+                      <h2 className='tittle_category'>{categories}</h2>
                       <ListStructure />
                    </section>
 
                    <section className='section_category' >
-                      <h2 className='tittle_category'></h2>
+                      <h2 className='tittle_category'>{categories}</h2>
                       <ListStructure />
                    </section>
 
                    <section className='section_category' >
-                      <h2 className='tittle_category'></h2>
+                      <h2 className='tittle_category'>{categories}</h2>
                       <ListStructure />
                    </section>
                  </div>                

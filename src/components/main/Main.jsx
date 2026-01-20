@@ -7,7 +7,7 @@ const Main = () => {
 
         <section id='area_list_itens'>
           <div className="see_your_list">
-            <h2>Veja sua lista</h2>
+            <h2>Sua lista</h2>
           </div>
 
           <section id='cards_itens_area'>
