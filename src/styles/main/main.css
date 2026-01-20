@@ -1,0 +1,19 @@
+main {
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+main > #area_list_itens {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+main > #area_list_itens > .see_your_list {
+    font-size: 21px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(59, 59, 63);
+}
