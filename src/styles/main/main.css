@@ -10,7 +10,7 @@ main > #area_list_itens {
     justify-content: start;
     align-items: center;
     flex-flow: column nowrap;
-    height: 60%;
+    height: 63%;
 }
 
 main > #area_list_itens > .see_your_list {
