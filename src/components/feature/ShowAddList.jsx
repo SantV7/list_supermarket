@@ -10,6 +10,8 @@ const ShowAddList = ({ closeAddList, saveValue }) => {
       
   let [saveAddItem, setSaveAddItem] = useState('')
 
+  const [ valueBtnSubmit, setValueBtnSubmit] = useState(false)
+  
 
 
 
@@ -46,7 +48,7 @@ const ShowAddList = ({ closeAddList, saveValue }) => {
         </div>
 
 
-        <button onClick={() => saveValue(saveAddCategory, saveAddItem)} id='add_adn_save_on_list'>Adicionar a lista</button>
+        <button onChange={() => setValueBtnSubmit(!valueBtnSubmit)} onClick={() => saveValue(saveAddCategory, saveAddItem)} id='add_adn_save_on_list'>Adicionar a lista</button>
       </div>
     </>
   )
