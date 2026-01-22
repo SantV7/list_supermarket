@@ -25,7 +25,7 @@ const HeaderPage = () => {
 
 
    function saveValue(saveAddCategory, saveAddItem) {
-    alert(`Categoria: ${saveAddCategory} e itens: ${saveAddItem}`)
+     alert(`Categoria: ${saveAddCategory} e itens: ${saveAddItem}`)
      setCategories(saveAddCategory)
      setItems(saveAddItem)
   }
@@ -67,13 +67,15 @@ const HeaderPage = () => {
 
 
              {
-              statusBtnCart
-              ? ('')
-              : (
-                <div className="menuList">
-                  
-                 </div>                
-              )
+               statusBtnCart
+               ? ('')
+               : (
+                <div className="menuList"> <div className="ddddds">
+                  z
+                </div>
+                <div className="ddddds">c</div>
+                <div className="ddddds">vv</div></div>                
+               )
              }
            </div>
         </div>

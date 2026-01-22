@@ -70,10 +70,10 @@
     align-items: center;
     flex-flow: column nowrap;
     gap: 27px;
-    top: 82px;
+    top: 82.4px;
     right: 0;
     padding: 4px 5px 0px 5px;
-    width: 60%;
+    width: 64%;
     min-height: 60vh;
     border-left: 1px solid rgba(23, 45, 244, 0.303);
     border-bottom: 1px solid rgba(1, 1, 1, 0.075);
