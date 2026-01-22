@@ -4,9 +4,11 @@ import { MdRemoveShoppingCart } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import '../../styles/headerStyle/headerpage.css'
 import { IoBagAdd } from "react-icons/io5";
-import ListStructure from './ListStructure';
 import ShowAddList from '../feature/ShowAddList';
 
+
+// import { FaCheck } from "react-icons/fa"; <FaCheck size={21} id='check_icon' />
+// import { IoClose } from "react-icons/io5";  <IoClose id='close_item_list_icon' size={30} />
 
 const HeaderPage = () => {
 
@@ -69,31 +71,12 @@ const HeaderPage = () => {
               ? ('')
               : (
                 <div className="menuList">
-                   <section className='section_category' >
-                      <h2 className='tittle_category'>{categories}</h2>
-                      <ListStructure />
-                   </section>
-
-                   <section className='section_category' >
-                      <h2 className='tittle_category'>{categories}</h2>
-                      <ListStructure />
-                   </section>
-
-                   <section className='section_category' >
-                      <h2 className='tittle_category'>{categories}</h2>
-                      <ListStructure />
-                   </section>
-
-                   <section className='section_category' >
-                      <h2 className='tittle_category'>{categories}</h2>
-                      <ListStructure />
-                   </section>
+                  
                  </div>                
               )
              }
            </div>
         </div>
-
       </header>
       </>
   )
