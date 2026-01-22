@@ -70,11 +70,9 @@ const HeaderPage = () => {
                statusBtnCart
                ? ('')
                : (
-                <div className="menuList"> <div className="ddddds">
-                  z
-                </div>
-                <div className="ddddds">c</div>
-                <div className="ddddds">vv</div></div>                
+                <div className="menuList">                
+
+                </div>                
                )
              }
            </div>

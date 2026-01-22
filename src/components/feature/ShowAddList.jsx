@@ -14,9 +14,6 @@ const ShowAddList = ({ closeAddList, saveValue }) => {
   
 
 
-
-
-
   return (
     <>
       <div className="addItemList">
