@@ -7,8 +7,6 @@ import { IoBagAdd } from "react-icons/io5";
 import ShowAddList from '../feature/ShowAddList';
 
 
-// import { FaCheck } from "react-icons/fa"; <FaCheck size={21} id='check_icon' />
-// import { IoClose } from "react-icons/io5";  <IoClose id='close_item_list_icon' size={30} />
 
 const HeaderPage = () => {
 

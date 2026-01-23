@@ -6,12 +6,31 @@ import { IoCloseCircle } from "react-icons/io5";
 
 const ShowAddList = ({ closeAddList, saveValue }) => {
 
+  
+  const [ valueBtnSubmit, setValueBtnSubmit] = useState(false)
+
   let [saveAddCategory, setSaveAddCategory] = useState('')
       
   let [saveAddItem, setSaveAddItem] = useState('')
-
-  const [ valueBtnSubmit, setValueBtnSubmit] = useState(false)
   
+  const creationAreaList = (saveAddCategory, saveAddItem) => {
+
+    let newCategorry = saveAddCategory
+
+    let NewItem = saveAddItem
+    ( 
+      <div className='storage_list'>
+       <h2>{newCategorry}</h2>
+        <ul>
+         <li>{NewItem}</li>
+         </ul>
+     </div>
+   )
+  }
+
+  // import { FaCheck } from "react-icons/fa"; <FaCheck size={21} id='check_icon' />
+  
+ // import { IoClose } from "react-icons/io5";  <IoClose id='close_item_list_icon' size={30} />
 
 
   return (
@@ -45,7 +64,11 @@ const ShowAddList = ({ closeAddList, saveValue }) => {
         </div>
 
 
-        <button onChange={() => setValueBtnSubmit(!valueBtnSubmit)} onClick={() => saveValue(saveAddCategory, saveAddItem)} id='add_adn_save_on_list'>Adicionar a lista</button>
+        <button onChange={() => setValueBtnSubmit(!valueBtnSubmit)}
+         onClick={() => creationAreaList()}
+         id='add_adn_save_on_list'>
+          Adicionar a lista
+         </button>
       </div>
     </>
   )
