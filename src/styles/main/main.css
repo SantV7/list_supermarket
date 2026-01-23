@@ -1,7 +1,6 @@
 main {
     padding: 10px;
     width: 100%;
-    transform:;
     height: 100vh;
 }
 
@@ -21,4 +20,18 @@ main > #area_list_itens > .see_your_list {
     text-align: center;
     color: rgb(59, 59, 63);
     border-radius: 4px;
+}
+
+main > #area_list_itens > #cards_itens_area > .storage_list {
+    background-color: rgb(47, 46, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 5px;
+}
+
+main > #area_list_itens > #cards_itens_area > .storage_list > h3 {
+    color: white;
+    font-family: poppins, Arial, Helvetica, sans-serif;
 }
