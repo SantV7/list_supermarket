@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaCheck } from "react-icons/fa"; 
+import { IoClose } from "react-icons/io5"; 
+
 import '../../styles/main/main.css'
 
 const Main = ({ categories = [] }) => {
@@ -18,7 +21,7 @@ const Main = ({ categories = [] }) => {
             {categories.map((item, index) => (
               <div className="storage_list" key={index}>
                 <h3>{item.category}</h3>
-                <li>{item.item}</li>
+                <li>{item.item} <FaCheck id='facheck' size={25}/> <IoClose id='closeRedIcon' size={34} /></li>
               </div>
             ))}
 

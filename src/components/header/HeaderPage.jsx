@@ -14,7 +14,7 @@ const HeaderPage = () => {
   const [addList, SetAddList] = useState(false)
   const [statusBtnCart, SetStatusBtnCart] = useState(true)
 
-  // 🪨 LISTA QUE GUARDA TUDO
+
   const [categories, setCategories] = useState([])
 
   function saveValue(saveAddCategory, saveAddItem) {
@@ -77,7 +77,7 @@ const HeaderPage = () => {
         </div>
       </header>
 
-      {/* 🪨 A LISTA VAI PRO MAIN */}
+   
       <Main categories={categories} />
     </>
   )

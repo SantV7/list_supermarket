@@ -39,6 +39,24 @@ main > #area_list_itens > #cards_itens_area > .storage_list > h3 {
 }
 
 main > #area_list_itens > #cards_itens_area > .storage_list > li {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
     color: white;
     font-size: 1.13em;
+}
+
+main > #area_list_itens > #cards_itens_area > .storage_list > li > #facheck {
+    cursor: pointer
+    ;
+    margin-left: 18px;
+    color: rgb(255, 179, 0);
+}
+
+main > #area_list_itens > #cards_itens_area > .storage_list > li > #closeRedIcon {
+    cursor: pointer
+    ;
+    margin-left: 10px;
+    color: rgb(255, 94, 0);
+    margin-top: -2.7px;
 }
