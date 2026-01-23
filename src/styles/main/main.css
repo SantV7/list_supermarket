@@ -29,9 +29,16 @@ main > #area_list_itens > #cards_itens_area > .storage_list {
     align-items: center;
     flex-flow: column;
     gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 main > #area_list_itens > #cards_itens_area > .storage_list > h3 {
     color: white;
     font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+main > #area_list_itens > #cards_itens_area > .storage_list > li {
+    color: white;
+    font-size: 1.13em;
 }

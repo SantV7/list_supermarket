@@ -18,7 +18,7 @@ const Main = ({ categories = [] }) => {
             {categories.map((item, index) => (
               <div className="storage_list" key={index}>
                 <h3>{item.category}</h3>
-                <p>{item.item}</p>
+                <li>{item.item}</li>
               </div>
             ))}
 
